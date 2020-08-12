@@ -7,11 +7,11 @@ import java.lang.Exception
 class ContactBusiness {
 
     private fun validate(name: String, phone: String) {
-        if (name == ""){
+        if (name == "" || name == " "){
             throw Exception ("Nome é obrigatório!")
         }
-        if (phone == " ") {
-            throw Exception("Telefone é obrigatório!")
+        if (phone == "" || phone == " ") {
+            throw Exception ("Telefone é obrigatório!")
         }
     }
 
